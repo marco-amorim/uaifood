@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# [EVNTS] DESAFIO FRONT-END REACT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+  - [1. INTRODUÇÃO](#1-introdu%C3%A7%C3%A3o)
+  - [2 UAIFOOD](#2-uaifood)
+    - [2.1 Telas](#21-telas)
+      - [Landing](#landing)
+      - [Lista de restaurantes](#lista-de-restaurantes)
+    - [2.2 API](#22-api)
+    - [2.3 Recursos](#23-recursos)
+  - [3 BOA SORTE](#3-boa-sorte)
 
-In the project directory, you can run:
+## 1. INTRODUÇÃO
 
-### `npm start`
+Olá! 😁
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Se você recebeu um convite para estar aqui você faz parte de um grupo de pessoas que acreditamos serem bons candidatos!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Fizemos este teste com muito carinho e esperamos que você consiga se sair bem 👍
 
-### `npm test`
+O teste consiste em testar suas habilidades em construir soluções para o _Front-end_ utilizando as tecnologias que usamos na Evnts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Todo o seu código deve ser disponibilizado em um repositório em seu _github_ ou _bitbucket_ pessoal. Envie o link para o email que te enviamos (vagas@evnts.com.br).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Boa sorte!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 2 UAIFOOD
+A Evnts é uma empresa mineira, cheia de mineiros, então nada melhor que inovarmos no que a gente sabe fazer de melhor: __comer__. Para isto, neste teste, você vai ter que nos ajudar e criar o ~~disruptivo~~ site __UaiFood__. 
 
-### `npm run eject`
+Para isto, siga as orientações abaixo e crie as telas a seguir:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ O único requisito é utilizar a biblioteca _React_ para construir os componetes de _UI_. Fique a vontade para utilizar qualquer outra biblioteca e/ou ferramenta que achar necessário ou interessante de usar (pré-processadores css, _styled components_, e qualquer outra coisa).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2.1 Telas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  #### Landing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Aqui você irá mostrar apenas as cidades disponíveis na API e permitir que o usuário escolha uma delas.
+  <center>
 
-## Learn More
+  ![BUSCA](./imgs/documentation/search.jpg)
+  </center>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  <center>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ![BUSCA](./imgs/documentation/search-selecting.jpg)
+  </center>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  #### Lista de restaurantes
 
-### Analyzing the Bundle Size
+Uma vez selecionada a cidade, o usuário poderá ver uma listagem com todos os restaurantes locais e filtrar por nota, custo e tipo de cozinha.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ![Landing](./imgs/documentation/restaurants.jpg)
+  </center>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### 2.2 API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Para dar vida ao site utilize a [API](https://developers.zomato.com/api?lang=pt) do [Zomato](https://www.zomato.com/pt/sao-paulo-sp) para pegar todas as informações necessárias para as duas páginas.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 2.3 Recursos
 
-### `npm run build` fails to minify
+Todas as imagens que precisará utilizar estão dentro deste repositório em [imgs](/imgs/uaifood/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Os ícones são todos do [font-awesome](https://fontawesome.com/):
+  - [Pin mapa](https://fontawesome.com/icons?d=gallery&q=f3c5) (solid)
+  - [Estrela contorno](https://fontawesome.com/icons?d=gallery&q=f005) (regular)
+  - [Estrela full](https://fontawesome.com/icons?d=gallery&q=f005) (solid)
+  - [Duas pessoas](https://fontawesome.com/icons?d=gallery&q=f500) (solid)
+
+
+Fonte: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+
+#### 2.3.1 Especificações das telas:
+
+![Search](./imgs/specifications/search-selecting.jpg) 
+![Filter](./imgs/specifications/filter.jpg) 
+![Card](./imgs/specifications/card.jpg) 
+
+<!-- ## 3 Desafios Extras
+
+Se você é bão/dedicado e já terminou o __UaiFood__, meus parabéns!
+Você é foda! ❤️ 
+
+Utilize qualquer ferramenta de deploy para deixar seu site funfando na internet. Nos mande o link e uma breve explicação do qual ferramenta utilizou, como fez e etc.
+
+Implemente mais algumas dessas coisas e ganhe pontos extras com a gente: 
+ -->
+
+## 3 BOA SORTE
+<p align="center">
+  <img align="center" src="./imgs/uaifood/potato/potato.jpg" alt="batatinha" />
+  <br/>
+  mandavê 😘
+</p>
