@@ -1,0 +1,21 @@
+#search-bar button {
+	color: #fff;
+	background-color: #39b54a;
+	font-family: 'Open Sans Light';
+	font-weight: 600;
+	width: 150px;
+	height: 35px;
+	margin-left: 10px;
+	border: none;
+}
+
+#search-bar button:focus {
+	outline: none;
+	box-shadow: none;
+	border: none;
+}
+
+#search-bar input {
+	width: 350px;
+	height: 35px;
+}

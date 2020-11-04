@@ -1,4 +1,17 @@
 body {
 	margin: 0;
 	padding: 0;
+	color: #ffffff;
+}
+
+input {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+input:focus {
+	border: none;
+	outline: none;
+	box-shadow: none;
 }
