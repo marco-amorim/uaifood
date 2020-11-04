@@ -19,3 +19,14 @@
 	width: 350px;
 	height: 35px;
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+	#search-bar input {
+		margin-bottom: 20px;
+	}
+
+	#search-bar button {
+		margin: 0;
+	}
+}

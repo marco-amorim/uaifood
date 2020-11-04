@@ -7,6 +7,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	position: fixed;
 }
 
 #landing h2 {
@@ -14,7 +15,8 @@
 	font-weight: 900;
 	color: #fff;
 	font-size: 30px;
-	margin: 15px 0px;
+	padding: 15px 0px;
+	max-width: 500px;
 }
 
 #landing .search-container {
@@ -22,8 +24,8 @@
 	top: 330px;
 	display: flex;
 	flex-direction: column;
-  max-width: 600px;
-  padding: 20px;
+	max-width: 600px;
+	padding: 20px;
 }
 
 #landing img {
@@ -35,9 +37,9 @@
 @media (max-width: 480px) {
 	#landing .search-container {
 		text-align: center;
-  }
-  
-  #landing h2 {
-    font-size: 25px;
-  }
+	}
+
+	#landing h2 {
+		font-size: 25px;
+	}
 }
