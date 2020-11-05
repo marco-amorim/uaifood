@@ -1,12 +1,12 @@
 import React from 'react';
-import Landing from './Landing';
+import Routes from '../routes';
 
 import '../assets/styles/global.css';
 
 const App = () => {
 	return (
 		<div>
-			<Landing />
+			<Routes />
 		</div>
 	);
 };

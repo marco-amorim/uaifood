@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import '../assets/styles/landing.css';
-import SearchBar from './SearchBar';
+import SearchBar from '../components/SearchBar';
 import uaiFoodLogo from '../assets/images/uaifood/logo-white.jpg';
 
 class Landing extends Component {
