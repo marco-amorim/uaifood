@@ -34,7 +34,7 @@
 /* Mobile */
 @media (max-width: 480px) {
 	#search-bar input {
-		margin-bottom: 20px;
+		margin-bottom: 23px;
 	}
 
 	#search-bar button {

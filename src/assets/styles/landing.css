@@ -42,4 +42,23 @@
 	#landing h2 {
 		font-size: 25px;
 	}
+
+	#landing .search-container {
+		top: 150px;
+	}
+
+	#landing img {
+		top: 50px;
+	}
+}
+
+/* Desktop */
+@media (min-width: 480px) {
+	#landing .search-container {
+		top: 330px;
+	}
+
+	#landing img {
+		top: 100px;
+	}
 }
