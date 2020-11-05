@@ -9,10 +9,10 @@ class Landing extends Component {
 		return (
 			<div id="landing">
 				<section>
-					<img src={uaiFoodLogo} alt="" />
+					<img src={uaiFoodLogo} alt="uaiFood" />
 					<div className="search-container">
 						<h2>Descubra os melhores restaurantes em sua cidade</h2>
-						<SearchBar inputPlaceholder="Digite a cidade desejada" />
+						<SearchBar inputPlaceholder="Por favor, digite a cidade desejada" />
 					</div>
 				</section>
 			</div>

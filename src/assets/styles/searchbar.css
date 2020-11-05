@@ -18,6 +18,17 @@
 #search-bar input {
 	width: 350px;
 	height: 35px;
+	padding-left: 40px;
+}
+
+#search-bar .search-input {
+	position: relative;
+}
+
+#search-bar .search-input svg {
+	position: absolute;
+	top: 7px;
+	left: 14px;
 }
 
 /* Mobile */
