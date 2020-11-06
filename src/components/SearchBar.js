@@ -1,16 +1,31 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { cities } from '../apis/zomato';
+import zomatoApi from '../apis/zomato';
 
 import '../assets/styles/searchbar.css';
+import { Redirect } from 'react-router-dom';
 
 class SearchBar extends Component {
-	state = { suggestions: [], searchTerm: 'sa' };
+	state = { suggestions: [], searchTerm: '' };
+
+	componentDidUpdate() {}
 
 	onSearchSubmit = () => {
+		console.log('submit!');
+	};
+
+	onSearchInputChange = (event) => {
+		this.setState({ searchTerm: event.target.value });
+
+		setTimeout(() => {
+			this.search();
+		}, 1000);
+	};
+
+	search = () => {
 		if (this.state.searchTerm) {
-			cities
+			zomatoApi
 				.get('/cities', {
 					params: {
 						q: this.state.searchTerm,
@@ -18,9 +33,11 @@ class SearchBar extends Component {
 				})
 				.then((response) => {
 					const suggestions = response.data.location_suggestions;
-					console.log(suggestions);
+					this.setState({ suggestions: suggestions });
+					console.log(this.state.suggestions);
 				});
 		}
+		console.log(this.state.searchTerm);
 	};
 
 	render() {
@@ -28,7 +45,11 @@ class SearchBar extends Component {
 			<div id="search-bar">
 				<div className="search-input">
 					<FontAwesomeIcon icon={faMapMarkerAlt} color="grey" size="lg" />
-					<input type="text" placeholder={this.props.inputPlaceholder} />
+					<input
+						type="text"
+						onChange={(event) => this.onSearchInputChange(event)}
+						placeholder={this.props.inputPlaceholder}
+					/>
 					<button onClick={this.onSearchSubmit}>BUSCAR</button>
 				</div>
 			</div>
