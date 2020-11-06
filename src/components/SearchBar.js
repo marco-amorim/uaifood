@@ -4,7 +4,6 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import zomatoApi from '../apis/zomato';
 
 import '../assets/styles/searchbar.css';
-import { Redirect } from 'react-router-dom';
 
 class SearchBar extends Component {
 	state = { suggestions: [], searchTerm: '' };
