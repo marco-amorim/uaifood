@@ -1,7 +1,7 @@
 #landing section {
 	height: 100vh;
 	width: 100vw;
-	background-image: url('../images/uaifood/bg.jpg');
+	background-image: url('../../assets/images/uaifood/bg.jpg');
 	background-size: 100vw 100vh;
 	display: flex;
 	justify-content: center;

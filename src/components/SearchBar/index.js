@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import zomatoApi from '../apis/zomato';
+import zomatoApi from '../../apis/zomato';
 
-import '../assets/styles/searchbar.css';
+import './styles.css';
 
 class SearchBar extends Component {
 	state = { suggestions: [], searchTerm: '' };
-
-	componentDidUpdate() {}
 
 	onSearchSubmit = () => {
 		console.log('submit!');
