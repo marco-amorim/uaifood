@@ -1,3 +1,3 @@
-# UaiFood
+# uaiFood
 
-### iFood website clone using React
+### iFood website clone made with React
